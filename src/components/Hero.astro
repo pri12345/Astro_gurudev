@@ -1,0 +1,63 @@
+---
+---
+
+<section class="hero">
+  <h1 class="business-name">Business Name</h1>
+  <p class="tagline">Your futuristic tagline here</p>
+  <a href="https://clientarea.example.com" class="client-area-button" target="_blank" rel="noopener noreferrer">Client Area</a>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/background.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .business-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4rem;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #00ff00;
+    animation: fadeIn 2s ease-in;
+  }
+  .tagline {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    animation: fadeIn 2s ease-in;
+  }
+  .client-area-button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: #00ff00;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px #00ff00;
+  }
+  .client-area-button:hover {
+    background-color: #00cc00;
+    box-shadow: 0 0 20px #00cc00;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @media (max-width: 768px) {
+    .business-name {
+      font-size: 2.5rem;
+    }
+    .tagline {
+      font-size: 1rem;
+    }
+    .client-area-button {
+      padding: 0.5rem 1rem;
+    }
+  }
+</style>
