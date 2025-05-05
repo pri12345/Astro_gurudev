@@ -2,14 +2,22 @@
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import AboutUs from '../components/AboutUs.astro';
+const title = "Gurudev Importados";
+const description = "Desde la fábrica directo a Argentina";
+const canonicalUrl = "https://www.gurudevimportados.com"; 
 ---
 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A futuristic business landing page" />
+
     <title>Gurudev Importados</title>
+    
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonicalUrl} />
+    
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="icon" href="/favicon.ico" />

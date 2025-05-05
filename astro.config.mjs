@@ -1,6 +1,11 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://www.gurudevimportados.com', // Set this to your real domain
+  site: 'https://www.gurudevimportados.com', 
+  integrations: [sitemap()],
 });
+
+
+
